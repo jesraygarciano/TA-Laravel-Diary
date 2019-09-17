@@ -1,9 +1,9 @@
-## 環境構築
-- DBの作成
+## Environment
+- Creating Database
 
 - `cp .env.example .env`
 
-- 自分の環境に合わせて.envを編集
+- Changed .env file for app
 ```
 DB_DATABASE={DB_NAME}
 DB_USERNAME={DB_USER}
@@ -19,4 +19,4 @@ DB_SOCKET=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock   //XAMPPを使用
 
 - `php artisan serve`
 
-Go World!!
+Hello World!!
