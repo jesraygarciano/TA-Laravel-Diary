@@ -25,10 +25,10 @@
                     <label for="body">本文</label>
                     <textarea class="form-control" name="body" id="body">{{ old('body') }}</textarea>
                 </div>
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="image">画像</label>
                     <input type="file" class="form-control" name="image" id="image" value="{{ old('image') }}">
-                </div>
+                </div> --}}
                 <div class="text-right">
                     <button type="submit" class="btn btn-primary">投稿</button>
                 </div>
