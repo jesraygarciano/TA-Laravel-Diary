@@ -17,8 +17,8 @@ class DiariesTableSeeder extends Seeder
 
         $diaries = [
             [
-                'title' => 'watiセブでプログラミング',
-                'body'  => 'wwatii気づけばもうすぐ2ヶ月',
+                'title' => 'セブでプログラミング',
+                'body'  => '気づけばもうすぐ2ヶ月',
             ],
             [
                 'title' => '週末は旅行',

@@ -31,6 +31,7 @@ class DiaryController extends Controller
     {
         $diary = new Diary(); //Diaryモデルをインスタンス化
 
+
         // TODO: isValidだけでチェックできないか確認
         $fileName = null;
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
