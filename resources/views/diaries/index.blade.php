@@ -36,6 +36,10 @@
             <span class="js-like-num">{{ $diary->likes->count() }}</span>
         </div>
     </div>
+
+        <div class="mt-3 ml-3">
+
+        </div>
 @endforeach
 
 <div class="mt-5 d-flex justify-content-center">
