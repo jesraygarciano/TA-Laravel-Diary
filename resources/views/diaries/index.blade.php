@@ -12,7 +12,7 @@
     <div class="mt-4 p-3 border border-primary">
         @if($diary->image_path !== null)
             <img width="100%" src="{{ $diary->image_path }}">
-        @endif
+        @endif        
         <p>{{ $diary->title }}</p>
         <p>{{ $diary->body }}</p>
         <p>{{ $diary->created_at }}</p>
@@ -24,7 +24,7 @@
                 <button class="btn btn-danger">削除</button>
             </form>
         @endif
-        <div class=" mt-3 ml-3">
+        <div class="mt-3 ml-3">
             @if (Auth::check() && $diary->likes->contains(function ($user) {
                 return $user->id === Auth::user()->id;
             }))
@@ -36,10 +36,6 @@
             <span class="js-like-num">{{ $diary->likes->count() }}</span>
         </div>
     </div>
-
-        <div class="mt-3 ml-3">
-
-        </div>
 @endforeach
 
 <div class="mt-5 d-flex justify-content-center">
